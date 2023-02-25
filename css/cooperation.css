@@ -1,0 +1,282 @@
+.cooperation {
+	padding-top: 150px;
+	padding-bottom: 50px;
+}
+
+@media (max-width: 991.98px) {
+	.cooperation {
+		padding-top: 130px;
+		padding-bottom: 40px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.cooperation {
+		padding-top: 100px;
+		padding-bottom: 30px;
+	}
+}
+
+.cooperation__container {}
+
+.title {}
+
+.title__label {}
+
+.cooperation__tabs {
+	display: flex;
+	gap: 40px;
+}
+
+@media (max-width: 991.98px) {
+	.cooperation__tabs {
+		flex-direction: column;
+	}
+}
+
+.tabs-cooperation {}
+
+.tabs-cooperation__nav {
+	flex: 1 0 15%;
+	padding: 0px 20px 0px 20px;
+	flex-direction: column;
+	column-gap: 50px;
+	row-gap: 10px;
+	flex-wrap: wrap;
+}
+
+.tabs-cooperation__button {
+	color: #616161;
+	font-size: 20px;
+	line-height: 26px;
+	cursor: pointer;
+	position: relative;
+	transition: color 0.3s ease 0s;
+	background-color: transparent;
+	text-align: start;
+	padding-bottom: 20px;
+}
+
+.tabs-cooperation__button::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	transition: width 0.3s ease 0s;
+	/* background-color: #4285F4; */
+	background-color: #37590b;
+}
+
+.tabs-cooperation__button:hover {
+	/* color: #85abe7; */
+	color: #6ab50b;
+}
+
+.tabs-cooperation__button:hover::after {
+	width: 100%;
+}
+
+.tabs-cooperation__button.active {
+	/* color: #85abe7; */
+	color: #6ab50b;
+}
+
+.tabs-cooperation__button.active::after {
+	width: 100%;
+}
+
+.tabs-cooperation__body {
+	flex: 1 0 85%;
+	padding: 0px 20px 0px 20px;
+}
+
+.tabs-cooperation__item {
+	display: none;
+}
+
+.tabs-cooperation__item.active {
+	display: block;
+}
+
+/* ------- */
+
+
+.cooperation__title {
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+.cooperation__subtitle {
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 20px;
+}
+
+.cooperation__title:not(:first-child) {
+	padding-top: 30px;
+}
+
+
+.content-delivery__sending {}
+
+.cooperation__list {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.cooperation__link {
+	padding-left: 20px;
+	position: relative;
+}
+
+.cooperation__link:not(:last-child) {
+	padding-bottom: 20px;
+}
+
+.cooperation__link::before {
+	content: '';
+	background-color: #52451f;
+	width: 10px;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+/* --------form-------- */
+.cooperation__form {
+	display: flex;
+}
+
+.form-cooperation__body {
+	flex: 0 0 100%;
+}
+
+
+@media(max-width: 850px) {
+	.form-cooperation__body {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+}
+
+.form {
+	display: grid;
+	gap: 16px;
+	background-color: #EEEEEE;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+form * {
+	outline: none;
+}
+
+.form__body {
+	position: relative;
+}
+
+.form__item:last-child {
+	padding-top: 22px;
+}
+
+.form__input {
+	width: 100%;
+	height: 48px;
+	border-radius: 8px;
+	padding: 0px 24px;
+	background-color: #FFF;
+	transition: all 0.5s ease 0s;
+}
+
+.form__input:focus {
+	box-shadow: 0 0 15px #656D72;
+}
+
+.form__input::placeholder {
+	color: #656D72;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.form__input:focus::placeholder {
+	color: #232E35;
+}
+
+textarea.form__input {
+	font-size: 14px;
+	height: 190px;
+	resize: vertical;
+	padding: 16px 24px;
+}
+
+.options {
+	padding: 10px 0px 0px 0px;
+}
+
+.options__item {
+	margin: 0px 0px 10px 0px;
+}
+
+.options__input {
+	display: none;
+}
+
+.options__input:checked+.options__label::after {
+	transform: scale(1);
+}
+
+.options__label {
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+}
+
+.options__label::before {
+	content: '';
+	align-self: flex-start;
+	flex: 0 0 24px;
+	height: 24px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0px 10px 0px 0px;
+}
+
+.options__label::after {
+	transition: transform 0.5s ease 0s;
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 16px;
+	height: 16px;
+	background-color: #9ceb34;
+	border-radius: 50%;
+	transform: scale(0);
+}
+
+.select {
+	height: 50px;
+	width: 100%;
+	border-radius: 8px;
+	padding: 0px 24px;
+}
+
+.form__button {
+	background-color: #9ceb34;
+	padding: 16px;
+	width: 100%;
+	color: #362e14;
+	border-radius: 8px;
+	font-weight: 500;
+	font-size: 14px;
+	transition: background-color 0.3s ease 0s;
+}
+
+.form__button:hover {
+	background-color: #b3e76f;
+}
