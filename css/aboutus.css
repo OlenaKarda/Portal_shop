@@ -48,7 +48,11 @@
 	flex-wrap: wrap;
 	margin-bottom: 35px;
 }
-
+@media(max-width: 992px){
+	.tabs-aboutus__nav{
+		flex-direction: column;
+	}
+}
 .tabs-aboutus__button {
 	color: #616161;
 	font-size: 25px;
@@ -83,6 +87,7 @@
 .tabs-aboutus__button.active {
 	/* color: #85abe7; */
 	color: #6ab50b;
+	font-weight: bold;
 }
 
 .tabs-aboutus__button.active::after {
@@ -212,7 +217,23 @@
 	background-color: #EEEEEE;
 	border-radius: 8px;
 }
-
+.size__calc span{
+	font-weight: bold;
+	font-size: 25px;
+}
+.calc-size__item:not(:last-child){
+	padding-right: 10px;
+}
+.calc-size__item_sm{
+	text-transform: lowercase;
+}
 .image__calc {
 	max-width: 100%;
+}
+@media(max-width: 626px){
+	.size__calc{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
 }

@@ -81,6 +81,7 @@
 .tabs-cooperation__button.active {
 	/* color: #85abe7; */
 	color: #6ab50b;
+	font-weight: bold;
 }
 
 .tabs-cooperation__button.active::after {

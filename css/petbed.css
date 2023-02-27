@@ -98,3 +98,6 @@ padding-top: 10px;
 .petbed__cover span{
 	font-weight: bold;
 }
+.petbed__cover:not(:last-child){
+	padding-bottom: 10px;
+}
